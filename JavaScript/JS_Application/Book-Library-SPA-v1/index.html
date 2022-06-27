@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Books</title>
+    <link rel="stylesheet" href="styles/login-style.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="src/scripts.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navigation">
+            <div id="greet"></div>
+            <div id="guest">
+                <div><a href="/login">Login</a></div>
+                <div> <a href="/register">Register</a></div>
+            </div>
+            <div id="user">
+                <div> <a href="/">Home</a></div>
+                <div><a href="/add-book">Add Book</a></div>
+                <div id="logout"><a href="/logout">Logout</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="load-books-section">
+            <button id="loadBooks">LOAD ALL BOOKS</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="booksTable">
+                </tbody>
+            </table>
+        </section>
+
+        <section id="edit-book-section">
+            <form id="edit-book-form">
+                <h3 id="edit-book-header">Edit Books Form</h3>
+                <label>TITLE</label>
+                <input type="text" id="edit-book-title" name="title" placeholder="Title...">
+                <label>AUTHOR</label>
+                <input type="text" id="edit-book-author" name="author" placeholder="Author...">
+                <button id="edit-book-button">Save</button>
+            </form>
+        </section>
+
+        <section id="login-section">
+            <h1>Login</h1>
+            <form id="login-form">
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" id="username-login" name="username">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password-login" name="password">
+                </div>
+                <div>
+                    <input type="submit" value="Login">
+                </div>
+                <div class="errorMessage">
+                    <p>User not found or Invalid input!</p>
+                </div>
+            </form>
+        </section>
+
+        <section id="register-section">
+            <h1>Register</h1>
+            <form id="register-form">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" id="username-register" name="username">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password-register" name="password">
+                </div>
+                <div>
+                    <label for="password">Repeat Password</label>
+                    <input type="password" id="passwordRepeat" name="passwordRepeat">
+                </div>
+                <div>
+                    <input type="submit" value="Register">
+                </div>
+                <div id="errorMessage-register">
+                    <p></p>
+                </div>
+            </form>
+        </section>
+
+        <section id="book-section">
+            <form id="book-form">
+                <h1>Book Info</h1>
+                <div id="form-input-el">
+                    <div>
+                        <label>Title</label>
+                        <input type="text" id="form-title" name="title" placeholder="Title...">
+                    </div>
+                    <div>
+                        <label>Author</label>
+                        <input type="text" id="form-author" name="author" placeholder="Author...">
+                    </div>
+                    <div>
+                        <button id="form-button">Add Book</button>
+                    </div>
+                </div>
+                <div id="addedBook">Book Added Successfully</div>
+                <div id="addingAs"></div>
+            </form>
+        </section>
+
+        <section id="page-404">
+            Page Not Fund 404!
+        </section>
+    </main>
+</body>
+
+</html>

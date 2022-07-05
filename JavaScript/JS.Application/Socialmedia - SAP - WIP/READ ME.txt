@@ -1,1 +1,0 @@
-Server couldn't receive additional information about the user (username, age, imageURL, ect.)

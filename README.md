@@ -1,5 +1,3 @@
-# SoftUniTasks
-Тhese are some of the tasks I have solved during my time studying in SoftUni.
 # SoftUni Tasks
 
 During the time I studied at SoftUni I solved many tasks, here are some of them taken from *exercises* or *exams*.

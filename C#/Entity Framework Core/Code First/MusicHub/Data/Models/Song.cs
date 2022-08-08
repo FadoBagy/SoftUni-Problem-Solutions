@@ -29,12 +29,11 @@ namespace MusicHub.Data.Models
         [Required]
         public Genre Genre { get; set; }
 
-        // TODO: Define Relations
-        [ForeignKey(Album)]
-        public int AlbumId { get; set; }
+        [ForeignKey(nameof(Album))]
+        public int? AlbumId { get; set; }
         public Album Album { get; set; }
 
-        [ForeignKey(Writer)]
+        [ForeignKey(nameof(Writer))]
         public int WriterId { get; set; }
         public Writer Writer { get; set; }
 

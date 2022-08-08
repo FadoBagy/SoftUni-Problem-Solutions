@@ -19,8 +19,8 @@ namespace MusicHub.Data.Models
         // TODO
         public decimal Price { get; set; }
 
-        [ForeignKey(Producer)]
-        public int ProducerId { get; set; }
+        [ForeignKey(nameof(Producer))]
+        public int? ProducerId { get; set; }
         public Producer Producer { get; set; }
 
         public ICollection<Song> Songs { get; set; }

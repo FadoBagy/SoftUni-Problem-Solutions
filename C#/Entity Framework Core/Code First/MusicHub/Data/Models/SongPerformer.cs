@@ -4,11 +4,11 @@ namespace MusicHub.Data.Models
 {
     public class SongPerformer
     {
-        [ForeignKey(Song)]
+        [ForeignKey(nameof(Song))]
         public int SongId { get; set; }
         public Song Song { get; set; }
 
-        [ForeignKey(Song)]
+        [ForeignKey(nameof(Performer))]
         public int PerformerId { get; set; }
         public Performer Performer { get; set; }
     }

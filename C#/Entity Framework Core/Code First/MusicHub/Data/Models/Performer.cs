@@ -7,7 +7,7 @@ namespace MusicHub.Data.Models
     {
         public Performer()
         {
-            PerformerSongs = new List<PerformerSong>();
+            PerformerSongs = new List<SongPerformer>();
         }
 
         [Key]
@@ -25,6 +25,6 @@ namespace MusicHub.Data.Models
 
         public decimal NetWorth { get; set; }
 
-        public ICollection<PerformerSong> PerformerSongs { get; set; }
+        public ICollection<SongPerformer> PerformerSongs { get; set; }
     }
 }

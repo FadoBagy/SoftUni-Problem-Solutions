@@ -11,8 +11,6 @@
             // Only for creating databse
             // MusicHubDbContext context = 
             //     new MusicHubDbContext();
-
-            // DbInitializer.ResetDatabase(context);
         }
     }
 }

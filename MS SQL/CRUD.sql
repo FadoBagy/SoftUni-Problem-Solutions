@@ -23,7 +23,6 @@ UPDATE [Users]
 SET [Username] = 'Baginator'
 WHERE [Id] = 4
 
--- READING AND VIEWING DATA FROM DATABASE
 SELECT 
 	[Username] AS [Име на потребителя],
 	[Password] AS [Парола],
@@ -50,7 +49,6 @@ SELECT
 	CONCAT([FirstName], '.', [LastName], '@softuni.bg') AS ["Full Email Address]
 FROM [Employees]
 
--- Returns EVERY unique value
 SELECT 
 	DISTINCT [Salary]
 FROM [Employees]
@@ -169,18 +167,16 @@ DELETE FROM Towns WHERE TownID > 32
 
 TRUNCATE TABLE EmployeesInfo
 
---UPDATE Towns
---SET [Name] = 'Rodeman'
---WHERE TownID = 1
+UPDATE Towns
+SET [Name] = 'Rodeman'
+WHERE TownID = 1
 
---
 UPDATE Employees
 SET Salary = Salary + (Salary + 0.12)
 WHERE DepartmentID = 12 OR DepartmentID = 4 OR DepartmentID = 46 OR DepartmentID = 42
 
 SELECT Salary FROM Employees
---
--------------------
+
 SELECT PeakName
 FROM Peaks
 ORDER BY PeakName
@@ -194,7 +190,6 @@ ORDER BY
 	[Population] DESC,
 	CountryName
 
---
 SELECT 
 	CountryName,
 	CountryCode,
@@ -205,7 +200,6 @@ SELECT
 FROM Countries
 WHERE CurrencyCode IS NOT NULL
 ORDER BY CountryName DESC
---
 
 SELECT * FROM V_EmployeeNameJobTitle
 SELECT * FROM Characters

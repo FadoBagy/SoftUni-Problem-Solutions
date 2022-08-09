@@ -10,7 +10,6 @@ SELECT
 FROM Employees
 WHERE LastName LIKE '%ei%'
 
--- (3)
 SELECT 
 	FirstName
 FROM Employees

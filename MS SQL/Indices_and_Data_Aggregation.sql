@@ -102,8 +102,6 @@ WHERE
 	AND HireDate > '2000-01-01'
 GROUP BY DepartmentID
 
-
-
 DELETE  
 FROM Employees
 WHERE (
@@ -122,8 +120,6 @@ SELECT
 	AVG(Salary)
 FROM Employees
 GROUP BY DepartmentID
-
-
 
 SELECT 
 	DepartmentID,

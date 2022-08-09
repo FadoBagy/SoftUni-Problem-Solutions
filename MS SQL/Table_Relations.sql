@@ -38,7 +38,7 @@ JOIN Models AS mo ON
 	mo.ManufacturerID = m.ManufacturerID
 ORDER BY m.[Name] DESC
 --------------------------------------------
--- Many-To-Many - No relation just Maping Table with two FKs and compoused PK
+-- Many-To-Many 
 CREATE TABLE Students (
 	StudentID INT PRIMARY KEY IDENTITY,
 	[Name] NVARCHAR(40) NOT NULL

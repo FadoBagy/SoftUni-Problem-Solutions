@@ -8,7 +8,6 @@ FULL JOIN Addresses AS a ON
 	e.AddressID = a.AddressID
 ORDER BY e.AddressID
 
-
 SELECT TOP(50)
 	e.FirstName,
 	e.LastName,

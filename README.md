@@ -1,4 +1,4 @@
-# SoftUni Tasks
+# My SoftUni Tasks
 
 During the time I studied at SoftUni I solved many tasks, here are some of them taken from *exercises* or *exams*.
 

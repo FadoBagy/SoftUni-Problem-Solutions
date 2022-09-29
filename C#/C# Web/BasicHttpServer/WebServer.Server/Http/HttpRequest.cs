@@ -18,8 +18,13 @@
 
         public static HttpRequest Parse(string request) 
         {
-            var lines = request.Split(NewLine);
+            if (request == String.Empty)
+            {
+                Console.WriteLine(" #Empty request");
+                return null;
+            }
 
+            var lines = request.Split(NewLine);
             var startLine = lines.First().Split(" ");
 
             var method = ParseHttpMethod(startLine[0]);

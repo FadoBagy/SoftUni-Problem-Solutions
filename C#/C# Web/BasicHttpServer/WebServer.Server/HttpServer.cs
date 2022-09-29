@@ -24,11 +24,11 @@
         public async Task Start() 
         {
             listener.Start();
-            Console.WriteLine($"Server started on port {port}...");
-            Console.WriteLine("Listening for requests...");
+            Console.WriteLine($" #Server started on port {port}...");
 
             while (true)
             {
+                Console.WriteLine(" #Listening for requests...");
                 // Connection to the browser
                 var connection = await listener.AcceptTcpClientAsync();
                 // Information send
@@ -50,14 +50,23 @@
             // Saving the request by parts
             var bufferLength = 1024;
             var buffer = new byte[bufferLength];
+            int totalBytes = 0;
             var requestBuilder = new StringBuilder();
-            while (networkStream.DataAvailable)
+
+            do
             {
                 var byteRead = await networkStream.ReadAsync(buffer, 0, bufferLength);
+                totalBytes += byteRead;
+                if (totalBytes > 10 * 1024)
+                {
+                    throw new InvalidOperationException("Request is too large.");
+                }
                 requestBuilder.Append(Encoding.UTF8.GetString(buffer, 0, byteRead));
-            }
 
-            return requestBuilder.ToString();
+            }
+            while (networkStream.DataAvailable);
+
+            return requestBuilder.ToString().TrimEnd();
         }
 
         private static async Task WriteResponse(NetworkStream networkStream)

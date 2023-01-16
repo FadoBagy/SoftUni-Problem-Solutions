@@ -1,0 +1,26 @@
+* {
+    font-family: Helvetica, sans-seri;
+}
+
+body {
+    position: relative;
+    background-color: rgb(238, 238, 238);
+    color: rgb(51, 51, 51);
+    padding: 25px;
+}
+
+article {
+    display: inline-block;
+    width: 700px;
+}
+
+img {
+    width: 70%;
+}
+
+aside {
+    position: absolute;
+    display: inline-block;
+    margin-bottom: auto;
+    top: 20;
+}

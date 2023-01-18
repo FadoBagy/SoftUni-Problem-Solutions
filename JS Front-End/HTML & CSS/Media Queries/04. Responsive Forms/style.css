@@ -1,0 +1,109 @@
+body {
+    padding: 50px;
+}
+
+fieldset {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding-block-end: 0;
+    border-width: 0;
+    border-style: none;
+    border-color: none;
+    border-image: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+}
+
+legend {
+    display: none;
+}
+
+form {
+    position: relative;
+    width: fit-content;
+    background-color: #F8F8F8;
+    border: 1px solid #868686;
+}
+
+form input[type="submit"] {
+    width: fit-content;
+    background-color: #3a3a3a;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 3px;
+    padding: 9px 15px 9px 15px;
+    font-weight: bold;
+    font-size: 0.77rem;
+    cursor: pointer;
+}
+
+form label {
+    font-weight: bold;
+}
+
+.form-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-input input {
+    width: 200px;
+    height: 20px;
+    margin-left: auto;
+    padding-left: 20px;
+    border: 1px solid #b6b6b6af;
+    border-radius: 3px;
+}
+
+.form-input i {
+    position: absolute;
+    right: 206px;
+    font-size: 13px;
+}
+
+form p {
+    display: none;
+}
+
+.login-lable {
+    position: absolute;
+    left: -1px;
+    top: -20px;
+    background-color: #F8F8F8;
+    border: 1px solid #868686;
+    border-radius: 3px;
+    padding: 8px 100px 8px 8px;
+    font-size: 0.9rem;
+}
+
+.login-lable p {
+    display: block;
+    margin: 0;
+    font-weight: bold;
+}
+
+@media (max-width: 850px) {
+    .form-input {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0px;
+    }
+
+    .form-input input {
+        margin: 0;
+    }
+
+    .form-input i {
+        right: 208px;
+        bottom: 5px;
+    }
+}

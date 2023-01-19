@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navigation-section {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    background-color: #00000049;
+    box-shadow: 0 5px 20px #00000049;
+}
+
+.navigation-section nav {
+    padding: 10px 40px 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-section img {
+    width: 150px;
+}
+
+.navigation-section button {
+    background-color: #E20813;
+    color: #f2f2f2;
+    border: none;
+    padding: 8px 12px 8px 12px;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.navigation-section button:hover,
+.input-section button:hover {
+    background-color: #c00912;
+}
+
+.hero {
+    position: relative;
+    min-height: 450px;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(40%);
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero h1 {
+    width: 550px;
+    margin-bottom: 15px;
+    font-size: 3rem;
+}
+
+.hero h3 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-section textarea {
+    width: 290px;
+    font-size: 1rem;
+    padding: 13px 5px 13px 5px;
+    border: none;
+    resize: none;
+}
+
+.input-section textarea:focus {
+    outline: none;
+}
+
+.input-section button {
+    height: 45px;
+    border: none;
+    background-color: #E20813;
+    color: #f2f2f2;
+    padding: 8px 30px 8px 30px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.black {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #00000049;
+    box-shadow: 0 -10px 20px #00000049;
+}
+
+.line {
+    width: 100%;
+    height: 7px;
+    background-color: #222222;
+    z-index: 10;
+}
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #000;
+    color: #f2f2f2;
+    padding: 20px;
+}
+
+.info-section img {
+    width: 500px;
+}
+
+img[alt="Stranger Things Downloading..."] {
+    width: 350px;
+}
+
+.info-text {
+    max-width: 500px;
+}
+
+.info-text h2,
+.faq h2 {
+    font-size: 2rem;
+}
+
+.info-text p {
+    font-size: 1.3rem;
+    color: #c9c9c9;
+}
+
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    color: #f2f2f2;
+    padding: 20px;
+}
+
+.faq ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 20px 0 20px 0;
+}
+
+.faq li {
+    width: 500px;
+    list-style-type: none;
+    background-color: #222222;
+    padding: 10px 15px 10px 15px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 300ms;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq li:hover {
+    background-color: #161616;
+}
+
+.small-text {
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    color: #3f3f3f;
+    padding: 50px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 20px 0 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer li a {
+    color: #3f3f3f;
+    text-decoration: none;
+    transition: 250ms;
+}
+
+footer li a:hover {
+    color: #c00912;
+}
+
+@media (max-width: 720px) {
+    .info-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img[alt="Stranger Things Downloading..."] {
+        order: 2;
+    }
+}
+
+@media (max-width: 570px) {
+    .faq {
+        text-align: center;
+    }
+
+    .faq ul {
+        width: 100%;
+    }
+
+    .faq li {
+        width: auto;
+    }
+
+    .info-section img {
+        width: 350px;
+    }
+
+    img[alt="Stranger Things Downloading..."] {
+        width: 300px;
+    }
+
+    .hero {
+        padding: 10px;
+    }
+
+    .hero h1 {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .input-section {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .input-section textarea {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    main h2 {
+        font-size: 1.8rem !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .info-section img {
+        width: 250px;
+    }
+
+    img[alt="Stranger Things Downloading..."] {
+        width: 250px;
+    }
+
+    footer section div {
+        justify-content: flex-start;
+    }
+
+    .navigation-section img {
+        width: 100px;
+    }
+
+    .navigation-section nav {
+        padding: 10px;
+    }
+}

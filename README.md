@@ -1,6 +1,6 @@
 # My SoftUni Problem Solutions Repository
 
-Welcome to my SoftUni Problem Solutions repository! This repository contains the problems I have solved while studying at SoftUni. As an enthusiastic learner and aspiring programmer, I eagerly embraced every chance to explore a wide range of programming challenges in different languages and courses. From the foundational exercises that solidified my understanding of key concepts to the complex exam tasks that pushed the boundaries of my problem-solving abilities. The files in this repository are organized by programming language and course, making it easy to navigate and find specific problem solutions. In addition to exercises, you will also find solved tasks from exams.
+Welcome to my SoftUni Problem Solutions repository! This repository contains the problems I have solved while studying at SoftUni. Throughout my journey as a programmer, I have embraced various programming challenges across different languages and courses. These experiences have ranged from foundational exercises that solidified my understanding of key concepts to complex exam tasks that pushed the boundaries of my problem-solving abilities. The files in this repository are organized by programming language and course, making it easy to navigate and find specific problem solutions. In addition to exercises, you will also find solved tasks from exams.
 
 ## Table of Contents
 
